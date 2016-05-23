@@ -12,7 +12,6 @@
       <UseXPManifest Value="True"/>
       <XPManifest>
         <DpiAware Value="True"/>
-        <ExecutionLevel Value="1"/>
         <UseCompatibility Value="True"/>
         <UseCompatibilityVista Value="True"/>
         <UseCompatibilityWin7 Value="True"/>
@@ -20,17 +19,14 @@
         <UseCompatibilityWin81 Value="True"/>
       </XPManifest>
       <Icon Value="0"/>
-      <Resources Count="2">
-        <Resource_0 FileName="imgick\convert.exe" Type="RCDATA" ResourceName="CONVERT"/>
-        <Resource_1 FileName="imgick\magic.xml" Type="RCDATA" ResourceName="MAGIC"/>
-      </Resources>
     </General>
     <VersionInfo>
       <UseVersionInfo Value="True"/>
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="1"/>
-      <BuildNr Value="81"/>
-      <StringTable Comments="Useful to make ic launcher android icons" CompanyName="PF" FileDescription="Android ic-launcher set icon maker" InternalName="AndroidIconMaker" LegalCopyright="(c) 2016 PF" LegalTrademarks="PF co" OriginalFilename="android_icon_gen.exe" ProductName="Android ic-launcher set icon maker" ProductVersion="1.0"/>
+      <MinorVersionNr Value="1"/>
+      <BuildNr Value="122"/>
+      <StringTable Comments="Useful to make ic launcher android icons" CompanyName="PF" FileDescription="Android ic-launcher set icon maker" InternalName="AndroidIconMaker" LegalCopyright="(c) 2016 PF" LegalTrademarks="PF co" OriginalFilename="android_icon_gen.exe" ProductName="Android ic-launcher set icon maker" ProductVersion="1.1"/>
     </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="Default" Default="True"/>
@@ -43,22 +39,25 @@
         <FormatVersion Value="1"/>
       </local>
     </RunParams>
-    <RequiredPackages Count="5">
+    <RequiredPackages Count="6">
       <Item1>
-        <PackageName Value="pl_excontrols"/>
+        <PackageName Value="pl_bgracontrols"/>
       </Item1>
       <Item2>
-        <PackageName Value="pl_solutions"/>
+        <PackageName Value="pl_excontrols"/>
       </Item2>
       <Item3>
-        <PackageName Value="pl_graphics32"/>
+        <PackageName Value="pl_solutions"/>
       </Item3>
       <Item4>
-        <PackageName Value="pl_BGRAuecontrols"/>
+        <PackageName Value="pl_graphics32"/>
       </Item4>
       <Item5>
-        <PackageName Value="LCL"/>
+        <PackageName Value="pl_BGRAuecontrols"/>
       </Item5>
+      <Item6>
+        <PackageName Value="LCL"/>
+      </Item6>
     </RequiredPackages>
     <Units Count="2">
       <Unit0>

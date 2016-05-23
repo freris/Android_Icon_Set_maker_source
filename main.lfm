@@ -3,13 +3,13 @@ object Form1: TForm1
   Height = 517
   Top = 80
   Width = 456
-  BorderStyle = bsSingle
-  Caption = 'PF Android launcher icon set maker 1.0'
+  Caption = 'PF Android launcher icon set maker 1.1'
   ClientHeight = 517
   ClientWidth = 456
-  OnCloseQuery = FormCloseQuery
   OnCreate = FormCreate
+  OnDestroy = FormDestroy
   Position = poDesktopCenter
+  SessionProperties = 'opf.Checked;Position;WindowState;Height;Width'
   LCLVersion = '5.7'
   object Button1: TButton
     Left = 336
@@ -42,49 +42,6 @@ object Form1: TForm1
     OnClick = sbutClick
     TabOrder = 2
   end
-  object Panel1: TPanel
-    Left = 5
-    Height = 21
-    Top = 463
-    Width = 446
-    Anchors = [akLeft, akRight, akBottom]
-    BevelOuter = bvNone
-    BorderWidth = 1
-    BorderStyle = bsSingle
-    ClientHeight = 17
-    ClientWidth = 442
-    Color = 14286809
-    ParentColor = False
-    TabOrder = 3
-    object ula: TplURLLabel
-      Cursor = crHandPoint
-      Left = 241
-      Height = 15
-      Top = 0
-      Width = 156
-      Alignment = taCenter
-      Anchors = [akLeft, akRight]
-      AutoSize = False
-      Caption = 'www.imagemagick.org/'
-      Font.Color = clBlue
-      Font.Style = [fsUnderline]
-      ParentColor = False
-      ParentFont = False
-    end
-    object Label1: TLabel
-      Left = 41
-      Height = 15
-      Top = 0
-      Width = 200
-      Alignment = taCenter
-      Anchors = [akLeft, akRight]
-      AutoSize = False
-      Caption = 'With the power of  ImageMagick®'
-      Font.Color = clRed
-      ParentColor = False
-      ParentFont = False
-    end
-  end
   object Panel2: TPanel
     Left = 5
     Height = 450
@@ -99,18 +56,14 @@ object Form1: TForm1
     ClientHeight = 446
     ClientWidth = 442
     ParentColor = False
-    TabOrder = 4
+    TabOrder = 3
     object ima: TImage
-      Left = 3
-      Height = 440
-      Top = 3
-      Width = 436
+      Left = 1
+      Height = 444
+      Top = 1
+      Width = 440
       Align = alClient
-      Anchors = []
-      BorderSpacing.Around = 2
       Center = True
-      KeepOriginXWhenClipped = True
-      KeepOriginYWhenClipped = True
       Picture.Data = {
         1754506F727461626C654E6574776F726B47726170686963D8B4000089504E47
         0D0A1A0A0000000D494844520000019000000190080600000080BF36CC000000
@@ -1562,12 +1515,29 @@ object Form1: TForm1
         B9C27CCCEAFAAFF30000000049454E44AE426082
       }
       Proportional = True
-      Transparent = True
     end
+  end
+  object opf: TCheckBox
+    Left = 190
+    Height = 21
+    Top = 462
+    Width = 88
+    Anchors = [akBottom]
+    AutoSize = False
+    Caption = 'Open folder ?'
+    Checked = True
+    State = cbChecked
+    TabOrder = 4
   end
   object op: TOpenPictureDialog
     Filter = 'Portable Network Graphic (*.png)|*.png|Pixmap (*.xpm)|*.xpm|Bitmaps (*.bmp)|*.bmp|Cursor (*.cur)|*.cur|Icon (*.ico)|*.ico|Mac OS X Icon (*.icns)|*.icns|Joint Picture Expert Group (*.jpeg;*.jpg;*.jpe;*.jfif)|*.jpeg;*.jpg;*.jpe;*.jfif|Tagged Image File Format (*.tif;*.tiff)|*.tif;*.tiff|Graphics Interchange Format (*.gif)|*.gif|Portable PixMap (*.pbm;*.pgm;*.ppm)|*.pbm;*.pgm;*.ppm|Animated GIF (*.gif)|*.gif|TGA Image File (*.tga)|*.tga|KControls alpha bitmap (*.bma)|*.bma|Graphic (*.png;*.xpm;*.bmp;*.cur;*.ico;*.icns;*.jpeg;*.jpg;*.jpe;*.jfif;*.tif;*.tiff;*.gif;*.pbm;*.pgm;*.ppm;*.gif;*.tga;*.bma)|*.png;*.xpm;*.bmp;*.cur;*.ico;*.icns;*.jpeg;*.jpg;*.jpe;*.jfif;*.tif;*.tiff;*.gif;*.pbm;*.pgm;*.ppm;*.gif;*.tga;*.bma'
     left = 408
     top = 392
+  end
+  object f_stor: TXMLPropStorage
+    StoredValues = <>
+    FileName = 'set'
+    left = 408
+    top = 320
   end
 end

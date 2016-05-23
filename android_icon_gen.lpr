@@ -1,6 +1,5 @@
 program android_icon_gen;
-{By Panagiotis Freris - Athens - Greece, 18-05-2016 Version 1}
-{This program is freeware, for all -and made with CodeTyphon V 5.7}
+
 {$mode objfpc}{$H+}
 
 uses
@@ -8,7 +7,7 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, pl_bgrauecontrols, pl_graphics32, pl_excontrols, main
+  Forms, pl_bgrauecontrols, pl_graphics32, pl_excontrols, pl_bgracontrols, main
   { you can add units after this };
 
 {$R *.res}
