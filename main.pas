@@ -26,7 +26,6 @@ type
     op: TOpenPictureDialog;
     f_stor: TXMLPropStorage;
     procedure Button1Click(Sender: TObject);
-    procedure FormCreate(Sender: TObject);
     procedure FormDestroy(Sender: TObject);
     procedure mbutClick(Sender: TObject);
     procedure sbutClick(Sender: TObject);
@@ -52,11 +51,6 @@ implementation
 procedure TForm1.Button1Click(Sender: TObject);
 begin
   Close;
-end;
-
-procedure TForm1.FormCreate(Sender: TObject);
-begin
-ima.Picture.LoadFromFile(Getcurrentdir+'\logo.png');
 end;
 
 procedure TForm1.FormDestroy(Sender: TObject);
